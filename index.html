@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Kunal Yadav | Physical Education Teacher &amp; Sports Coach — Chandigarh</title>
+<meta name="description" content="Kunal Yadav — Physical Education Teacher and Sports Coach based in Chandigarh. Master's in Physical Education, national-level handball champion, specialist in speed, agility, swimming and Animal Flow training.">
+<meta name="keywords" content="Kunal Yadav, Physical Education Teacher, Sports Coach, Handball Player, Chandigarh, Panjab University, Speed and Agility Training">
+<meta name="author" content="Kunal Yadav">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Kunal Yadav | Physical Education Teacher &amp; Sports Coach">
+<meta property="og:description" content="Master of Physical Education, national handball champion and sports mentor based in Chandigarh, India.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1200&h=630&fit=crop">
+<meta property="og:url" content="https://kunalyadav.example.com">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon (placeholder) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230F172A'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='%23F59E0B' font-family='Poppins,sans-serif' font-weight='700'%3EK%3C/text%3E%3C/svg%3E">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kunal Yadav",
+  "jobTitle": "Physical Education Teacher & Sports Coach",
+  "address": { "@type": "PostalAddress", "addressLocality": "Chandigarh", "addressCountry": "India" },
+  "email": "mailto:kunalyadav0750@gmail.com",
+  "telephone": "+919914396955",
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Panjab University" }
+  ],
+  "knowsLanguage": ["English", "Hindi", "Punjabi"],
+  "award": [
+    "Junior National Handball Championship, Jamshedpur (2016)",
+    "Senior National Handball Championship, Ujjain (2017)",
+    "Senior National Handball Championship, Hyderabad (2018)",
+    "Senior National Handball Championship, Tiruvannamalai (2019)"
+  ]
+}
+</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- AOS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          deep: '#0F172A',
+          royal: '#2563EB',
+          gold: '#F59E0B',
+          mist: '#F8FAFC',
+        },
+        fontFamily: {
+          display: ['Poppins', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  :root{
+    --deep:#0F172A;
+    --deep-2:#16213E;
+    --royal:#2563EB;
+    --gold:#F59E0B;
+    --mist:#F8FAFC;
+    --lane-w: 3px;
+  }
+  *{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', sans-serif;
+    background:var(--mist);
+    color:var(--deep);
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4,h5,.font-display{font-family:'Poppins', sans-serif;}
+
+  /* Skip link */
+  .skip-link{position:absolute; left:-999px; top:0; background:var(--gold); color:var(--deep); padding:.75rem 1.25rem; z-index:9999; font-weight:600; border-radius:0 0 8px 0;}
+  .skip-link:focus{left:0;}
+
+  /* Focus visibility */
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+    outline:3px solid var(--gold); outline-offset:3px; border-radius:4px;
+  }
+
+  /* ===== Track-lane signature motif ===== */
+  /* A single dashed gold lane runs the height of the page, like a running-track lane line,
+     with a small handball "baton" marker that travels with scroll progress. */
+  #lane-track{
+    position:fixed; top:0; left:18px; width:var(--lane-w); height:100%;
+    background-image: repeating-linear-gradient(to bottom, var(--gold) 0 22px, transparent 22px 40px);
+    opacity:.55; z-index:40; pointer-events:none;
+  }
+  #lane-marker{
+    position:fixed; left:10px; top:0; width:20px; height:20px; z-index:41;
+    background:radial-gradient(circle at 35% 30%, #ffe9b8, var(--gold) 60%, #b97a05 100%);
+    border-radius:50%; box-shadow:0 0 12px rgba(245,158,11,.7);
+    transform:translateY(0); pointer-events:none;
+  }
+  @media (max-width: 767px){
+    #lane-track, #lane-marker{ display:none; }
+  }
+
+  .glass{
+    background:rgba(255,255,255,0.65);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border:1px solid rgba(255,255,255,0.4);
+  }
+  .glass-dark{
+    background:rgba(15,23,42,0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border:1px solid rgba(255,255,255,0.08);
+  }
+
+  .grad-hero{
+    background:
+      radial-gradient(ellipse at 20% 20%, rgba(37,99,235,.35), transparent 55%),
+      radial-gradient(ellipse at 85% 80%, rgba(245,158,11,.18), transparent 50%),
+      linear-gradient(160deg, #0F172A 0%, #101B36 45%, #0B1226 100%);
+  }
+
+  /* Court-line pattern overlay for hero, echoes handball court markings */
+  .court-lines{
+    position:absolute; inset:0; opacity:.14; pointer-events:none;
+    background-image:
+      repeating-linear-gradient(0deg, transparent 0 78px, rgba(255,255,255,.35) 78px 79px),
+      repeating-linear-gradient(90deg, transparent 0 78px, rgba(255,255,255,.35) 78px 79px);
+  }
+
+  .text-gold{color:var(--gold);}
+  .bg-royal{background:var(--royal);}
+  .btn-gold{
+    background:var(--gold); color:var(--deep); font-weight:700;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+    box-shadow:0 8px 24px rgba(245,158,11,.35);
+  }
+  .btn-gold:hover{ transform:translateY(-3px); box-shadow:0 14px 30px rgba(245,158,11,.5); background:#ffb020; }
+  .btn-outline-glass{
+    border:1.5px solid rgba(255,255,255,.6); color:#fff; font-weight:600;
+    transition:all .25s ease;
+  }
+  .btn-outline-glass:hover{ background:rgba(255,255,255,.12); transform:translateY(-3px); }
+
+  .section-eyebrow{
+    letter-spacing:.22em; text-transform:uppercase; font-size:.72rem; font-weight:700; color:var(--royal);
+  }
+
+  /* typing effect caret */
+  .typing-caret{ display:inline-block; width:3px; background:var(--gold); margin-left:4px; animation:blink 1s steps(1) infinite; }
+  @keyframes blink{ 50%{opacity:0;} }
+
+  /* card hover lift */
+  .lift-card{ transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, border-color .35s ease; }
+  .lift-card:hover{ transform:translateY(-8px); box-shadow:0 22px 40px rgba(15,23,42,.12); }
+
+  /* skill progress bars */
+  .skill-bar-track{ height:8px; border-radius:999px; background:#E2E8F0; overflow:hidden; }
+  .skill-bar-fill{ height:100%; border-radius:999px; width:0; background:linear-gradient(90deg, var(--royal), var(--gold)); transition:width 1.4s cubic-bezier(.16,1,.3,1); }
+
+  /* timeline (relay-baton path) */
+  .timeline{ position:relative; }
+  .timeline::before{
+    content:''; position:absolute; left:19px; top:0; bottom:0; width:3px;
+    background-image: repeating-linear-gradient(to bottom, var(--royal) 0 16px, transparent 16px 28px);
+  }
+  @media (min-width:768px){
+    .timeline::before{ left:50%; margin-left:-1.5px; }
+  }
+  .timeline-node{
+    width:40px; height:40px; border-radius:50%; background:var(--deep);
+    border:3px solid var(--gold); display:flex; align-items:center; justify-content:center; color:var(--gold);
+    box-shadow:0 6px 16px rgba(15,23,42,.25); flex-shrink:0; z-index:1;
+  }
+
+  /* medal ribbon */
+  .medal-ribbon{
+    width:52px; height:52px; border-radius:50%;
+    background:conic-gradient(from 210deg, var(--gold), #ffd77a, var(--gold));
+    display:flex; align-items:center; justify-content:center; color:var(--deep); font-size:1.3rem;
+    box-shadow:0 8px 18px rgba(245,158,11,.35);
+  }
+
+  .stat-num{ font-family:'Poppins',sans-serif; font-weight:800; }
+
+  ::selection{ background:var(--gold); color:var(--deep); }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+  }
+
+  .nav-link-underline{ position:relative; }
+  .nav-link-underline::after{
+    content:''; position:absolute; left:0; bottom:-4px; height:2px; width:0; background:var(--gold); transition:width .25s ease;
+  }
+  .nav-link-underline:hover::after, .nav-link-underline.active::after{ width:100%; }
+
+  #backToTop{
+    position:fixed; right:1.25rem; bottom:1.25rem; z-index:50; width:46px; height:46px; border-radius:50%;
+    background:var(--deep); color:var(--gold); border:2px solid var(--gold);
+    display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity .3s ease, transform .3s ease;
+  }
+  #backToTop.show{ opacity:1; pointer-events:auto; }
+  #backToTop:hover{ transform:translateY(-4px); }
+</style>
+</head>
+<body class="font-body antialiased">
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- Signature scroll motif: track lane + baton -->
+<div id="lane-track" aria-hidden="true"></div>
+<div id="lane-marker" aria-hidden="true"></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg fixed-top glass-dark py-3" id="mainNav" aria-label="Primary">
+  <div class="container">
+    <a class="navbar-brand font-display fw-bold text-white fs-4" href="#hero">
+      Kunal<span class="text-gold">Yadav</span>
+    </a>
+    <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars text-gold fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-lg-4 mt-3 mt-lg-0">
+        <li class="nav-item"><a class="nav-link text-white nav-link-underline" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white nav-link-underline" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link text-white nav-link-underline" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link text-white nav-link-underline" href="#achievements">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link text-white nav-link-underline" href="#sports">Sports</a></li>
+        <li class="nav-item"><a class="nav-link text-white nav-link-underline" href="#qualities">Qualities</a></li>
+        <li class="nav-item"><a class="btn btn-gold rounded-pill px-4 py-2" href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ===================== HERO ===================== -->
+<header id="hero" class="grad-hero position-relative d-flex align-items-center" style="min-height:100vh;">
+  <div class="court-lines"></div>
+  <div class="container position-relative py-5" style="z-index:2;">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7 text-white pt-5 pt-lg-0">
+        <p class="section-eyebrow text-gold mb-3" data-aos="fade-up">Chandigarh, India</p>
+        <h1 class="display-2 fw-black font-display mb-2" data-aos="fade-up" data-aos-delay="100" style="font-weight:900; line-height:1.05;">
+          Kunal Yadav
+        </h1>
+        <h2 class="fs-3 fw-semibold mb-4" data-aos="fade-up" data-aos-delay="200">
+          <span id="typedRole" class="text-gold"></span><span class="typing-caret">&nbsp;</span>
+        </h2>
+        <p class="fs-5 text-white-50 mb-4 col-lg-10" data-aos="fade-up" data-aos-delay="300">
+          Seeking to serve as a teacher in a reputed institution — bringing national-level competitive
+          experience, disciplined coaching methods, and a genuine passion for mentoring the next generation of athletes.
+        </p>
+        <div class="d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="400">
+          <a href="#about" class="btn btn-gold rounded-pill px-4 py-3">
+            <i class="fa-solid fa-user me-2"></i>View Profile
+          </a>
+          <a href="#contact" class="btn btn-outline-glass rounded-pill px-4 py-3">
+            <i class="fa-solid fa-paper-plane me-2"></i>Contact Me
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+        <div class="glass-dark rounded-4 p-4 p-md-5 text-white text-center mx-auto" style="max-width:380px;">
+          <div class="rounded-circle mx-auto mb-4 overflow-hidden d-flex align-items-center justify-content-center"
+               style="width:140px;height:140px;background:linear-gradient(135deg, var(--royal), var(--gold)); box-shadow:0 12px 30px rgba(37,99,235,.4); border:3px solid rgba(245,158,11,.6);">
+            <img src="kunal.png" alt="Kunal Yadav — Physical Education Teacher and Sports Coach" class="w-100 h-100" style="object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <i class="fa-solid fa-person-running fs-1" style="display:none;"></i>
+          </div>
+          <h3 class="font-display fw-bold fs-4 mb-1">Physical Education Specialist</h3>
+          <p class="text-gold small mb-4 fw-semibold">4× National Handball Player</p>
+          <div class="row text-center g-3">
+            <div class="col-4">
+              <div class="stat-num fs-4 text-gold">80%</div>
+              <div class="small text-white-50">M.P.Ed</div>
+            </div>
+            <div class="col-4">
+              <div class="stat-num fs-4 text-gold">4</div>
+              <div class="small text-white-50">Nationals</div>
+            </div>
+            <div class="col-4">
+              <div class="stat-num fs-4 text-gold">3</div>
+              <div class="small text-white-50">Languages</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="position-absolute bottom-0 start-50 translate-middle-x mb-4 text-white-50" aria-label="Scroll to About section">
+    <i class="fa-solid fa-chevron-down fa-bounce fs-4"></i>
+  </a>
+</header>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="py-5 py-lg-6 bg-white" style="padding-top:6rem; padding-bottom:6rem;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="section-eyebrow">Get To Know Him</p>
+      <h2 class="display-5 font-display fw-bold" style="color:var(--deep);">About Me</h2>
+    </div>
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="glass rounded-4 p-4 p-md-5 shadow-lg position-relative overflow-hidden">
+          <div class="position-absolute top-0 end-0 p-3">
+            <i class="fa-solid fa-handshake-angle text-gold fs-2 opacity-25"></i>
+          </div>
+          <div class="rounded-4 overflow-hidden mb-4" style="width:120px;height:120px; border:3px solid var(--gold);">
+            <img src="kunal.png" alt="Kunal Yadav portrait" class="w-100 h-100" style="object-fit:cover;" onerror="this.parentElement.style.display='none';">
+          </div>
+          <h3 class="font-display fw-bold fs-4 mb-3" style="color:var(--deep);">Kunal Yadav</h3>
+          <p class="text-secondary mb-3">
+            A dedicated Physical Education professional from Chandigarh, combining a Master's degree with real
+            competitive pedigree earned on the national handball court. Kunal blends structured training science
+            with an energetic, child-first coaching style.
+          </p>
+          <ul class="list-unstyled d-grid gap-2 small text-secondary">
+            <li><i class="fa-solid fa-location-dot text-royal me-2"></i>Chandigarh, India</li>
+            <li><i class="fa-solid fa-phone text-royal me-2"></i>9914396955</li>
+            <li><i class="fa-solid fa-envelope text-royal me-2"></i>kunalyadav0750@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="text-center p-4 rounded-4 lift-card border" style="border-color:#E2E8F0 !important;">
+              <div class="stat-num display-6 text-royal" data-count="8">0</div>
+              <p class="small text-secondary mb-0 mt-1">Years Sports<br>Experience</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="text-center p-4 rounded-4 lift-card border" style="border-color:#E2E8F0 !important;">
+              <div class="stat-num display-6 text-royal" data-count="4">0</div>
+              <p class="small text-secondary mb-0 mt-1">National<br>Championships</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="text-center p-4 rounded-4 lift-card border" style="border-color:#E2E8F0 !important;">
+              <div class="stat-num display-6 text-royal" data-count="6">0</div>
+              <p class="small text-secondary mb-0 mt-1">Sports<br>Disciplines</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="text-center p-4 rounded-4 lift-card border" style="border-color:#E2E8F0 !important;">
+              <div class="stat-num display-6 text-royal" data-count="3">0</div>
+              <p class="small text-secondary mb-0 mt-1">Languages<br>Spoken</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 p-4 rounded-4 text-white" style="background:linear-gradient(120deg, var(--deep), var(--deep-2));" data-aos="zoom-in">
+          <i class="fa-solid fa-bicycle text-gold fs-3 mb-2"></i>
+          <p class="mb-0"><strong class="text-gold">Signature feat:</strong> Completed the Chandigarh&nbsp;→&nbsp;Shimla cycling journey in just 14 hours — endurance that mirrors his approach to coaching.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EDUCATION TIMELINE ===================== -->
+<section id="education" class="py-5" style="background:var(--mist); padding-top:6rem; padding-bottom:6rem;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="section-eyebrow">Academic Journey</p>
+      <h2 class="display-5 font-display fw-bold" style="color:var(--deep);">Education Timeline</h2>
+    </div>
+
+    <div class="timeline py-3">
+      <!-- Item 1 -->
+      <div class="row gy-3 align-items-center mb-5">
+        <div class="col-12 d-md-none">
+          <div class="d-flex gap-3">
+            <div class="timeline-node"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="glass rounded-4 p-4 shadow-sm flex-fill" data-aos="fade-up">
+              <span class="badge bg-royal mb-2">2022</span>
+              <h3 class="fs-5 fw-bold font-display" style="color:var(--deep);">Master of Physical Education</h3>
+              <p class="text-secondary small mb-1">Panjab University</p>
+              <p class="text-gold fw-semibold small mb-0">Score: 80%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 d-none d-md-block text-end" data-aos="fade-right">
+          <div class="glass rounded-4 p-4 shadow-sm d-inline-block text-start" style="max-width:420px;">
+            <span class="badge bg-royal mb-2">Master's Degree</span>
+            <h3 class="fs-5 fw-bold font-display" style="color:var(--deep);">Master of Physical Education</h3>
+            <p class="text-secondary small mb-1">Panjab University</p>
+            <p class="text-gold fw-semibold small mb-0">Score: 80%</p>
+          </div>
+        </div>
+        <div class="col-md-2 d-none d-md-flex justify-content-center">
+          <div class="timeline-node"><i class="fa-solid fa-graduation-cap"></i></div>
+        </div>
+        <div class="col-md-5 d-none d-md-block"></div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="row gy-3 align-items-center mb-2">
+        <div class="col-12 d-md-none">
+          <div class="d-flex gap-3">
+            <div class="timeline-node"><i class="fa-solid fa-book-open"></i></div>
+            <div class="glass rounded-4 p-4 shadow-sm flex-fill" data-aos="fade-up">
+              <span class="badge bg-royal mb-2">Foundation</span>
+              <h3 class="fs-5 fw-bold font-display" style="color:var(--deep);">Bachelor of Physical Education</h3>
+              <p class="text-secondary small mb-1">Panjab University</p>
+              <p class="text-gold fw-semibold small mb-0">Score: 75%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 d-none d-md-block"></div>
+        <div class="col-md-2 d-none d-md-flex justify-content-center">
+          <div class="timeline-node"><i class="fa-solid fa-book-open"></i></div>
+        </div>
+        <div class="col-md-5 d-none d-md-block" data-aos="fade-left">
+          <div class="glass rounded-4 p-4 shadow-sm d-inline-block text-start" style="max-width:420px;">
+            <span class="badge bg-royal mb-2">Bachelor's Degree</span>
+            <h3 class="fs-5 fw-bold font-display" style="color:var(--deep);">Bachelor of Physical Education</h3>
+            <p class="text-secondary small mb-1">Panjab University</p>
+            <p class="text-gold fw-semibold small mb-0">Score: 75%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills" class="py-5 bg-white" style="padding-top:6rem; padding-bottom:6rem;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="section-eyebrow">Areas Of Expertise</p>
+      <h2 class="display-5 font-display fw-bold" style="color:var(--deep);">Skills &amp; Training</h2>
+    </div>
+    <div class="row g-4">
+      <!-- Skill cards with progress -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up">
+        <div class="lift-card h-100 p-4 rounded-4 border" style="border-color:#E2E8F0 !important;">
+          <i class="fa-solid fa-person-running fs-2 text-royal mb-3"></i>
+          <h3 class="fs-6 fw-bold font-display mb-2">Physical Training</h3>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+        <div class="lift-card h-100 p-4 rounded-4 border" style="border-color:#E2E8F0 !important;">
+          <i class="fa-solid fa-whistle fs-2 text-royal mb-3"></i>
+          <h3 class="fs-6 fw-bold font-display mb-2">Sports Coaching</h3>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="lift-card h-100 p-4 rounded-4 border" style="border-color:#E2E8F0 !important;">
+          <i class="fa-solid fa-person-swimming fs-2 text-royal mb-3"></i>
+          <h3 class="fs-6 fw-bold font-display mb-2">Swimming</h3>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+        <div class="lift-card h-100 p-4 rounded-4 border" style="border-color:#E2E8F0 !important;">
+          <i class="fa-solid fa-paw fs-2 text-royal mb-3"></i>
+          <h3 class="fs-6 fw-bold font-display mb-2">Animal Flow</h3>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up">
+        <div class="lift-card h-100 p-4 rounded-4 border" style="border-color:#E2E8F0 !important;">
+          <i class="fa-solid fa-bolt fs-2 text-royal mb-3"></i>
+          <h3 class="fs-6 fw-bold font-display mb-2">Speed Training</h3>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="93"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+        <div class="lift-card h-100 p-4 rounded-4 border" style="border-color:#E2E8F0 !important;">
+          <i class="fa-solid fa-arrows-turn-to-dots fs-2 text-royal mb-3"></i>
+          <h3 class="fs-6 fw-bold font-display mb-2">Agility Development</h3>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="lift-card h-100 p-4 rounded-4 border" style="border-color:#E2E8F0 !important;">
+          <i class="fa-solid fa-people-group fs-2 text-royal mb-3"></i>
+          <h3 class="fs-6 fw-bold font-display mb-2">Team Building</h3>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="94"></div></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+        <div class="lift-card h-100 p-4 rounded-4 border" style="border-color:#E2E8F0 !important;">
+          <i class="fa-solid fa-chalkboard-user fs-2 text-royal mb-3"></i>
+          <h3 class="fs-6 fw-bold font-display mb-2">Student Mentorship</h3>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="96"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ACHIEVEMENTS ===================== -->
+<section id="achievements" class="py-5" style="background:var(--deep); padding-top:6rem; padding-bottom:6rem;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="section-eyebrow" style="color:var(--gold);">National Recognition</p>
+      <h2 class="display-5 font-display fw-bold text-white">Achievements</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-aos="flip-up">
+        <div class="glass-dark rounded-4 p-4 h-100 text-white text-center lift-card">
+          <div class="medal-ribbon mx-auto mb-3"><i class="fa-solid fa-medal"></i></div>
+          <h3 class="fs-6 fw-bold font-display mb-1">Junior National Handball Championship</h3>
+          <p class="text-gold small mb-1">2016</p>
+          <p class="text-white-50 small mb-0"><i class="fa-solid fa-location-dot me-1"></i>Jamshedpur</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="flip-up" data-aos-delay="100">
+        <div class="glass-dark rounded-4 p-4 h-100 text-white text-center lift-card">
+          <div class="medal-ribbon mx-auto mb-3"><i class="fa-solid fa-trophy"></i></div>
+          <h3 class="fs-6 fw-bold font-display mb-1">Senior National Handball Championship</h3>
+          <p class="text-gold small mb-1">2017</p>
+          <p class="text-white-50 small mb-0"><i class="fa-solid fa-location-dot me-1"></i>Ujjain</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="flip-up" data-aos-delay="200">
+        <div class="glass-dark rounded-4 p-4 h-100 text-white text-center lift-card">
+          <div class="medal-ribbon mx-auto mb-3"><i class="fa-solid fa-trophy"></i></div>
+          <h3 class="fs-6 fw-bold font-display mb-1">Senior National Handball Championship</h3>
+          <p class="text-gold small mb-1">2018</p>
+          <p class="text-white-50 small mb-0"><i class="fa-solid fa-location-dot me-1"></i>Hyderabad</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="flip-up" data-aos-delay="300">
+        <div class="glass-dark rounded-4 p-4 h-100 text-white text-center lift-card">
+          <div class="medal-ribbon mx-auto mb-3"><i class="fa-solid fa-trophy"></i></div>
+          <h3 class="fs-6 fw-bold font-display mb-1">Senior National Handball Championship</h3>
+          <p class="text-gold small mb-1">2019</p>
+          <p class="text-white-50 small mb-0"><i class="fa-solid fa-location-dot me-1"></i>Tiruvannamalai</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SPORTS & INTERESTS ===================== -->
+<section id="sports" class="py-5 bg-white" style="padding-top:6rem; padding-bottom:6rem;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="section-eyebrow">Beyond The Classroom</p>
+      <h2 class="display-5 font-display fw-bold" style="color:var(--deep);">Sports &amp; Interests</h2>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in">
+        <div class="lift-card p-4 rounded-4" style="background:var(--mist);">
+          <i class="fa-solid fa-hand-fist fs-1 text-royal mb-2"></i>
+          <p class="fw-semibold mb-0">Handball</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="50">
+        <div class="lift-card p-4 rounded-4" style="background:var(--mist);">
+          <i class="fa-solid fa-futbol fs-1 text-royal mb-2"></i>
+          <p class="fw-semibold mb-0">Football</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+        <div class="lift-card p-4 rounded-4" style="background:var(--mist);">
+          <i class="fa-solid fa-volleyball fs-1 text-royal mb-2"></i>
+          <p class="fw-semibold mb-0">Volleyball</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="150">
+        <div class="lift-card p-4 rounded-4" style="background:var(--mist);">
+          <i class="fa-solid fa-basketball fs-1 text-royal mb-2"></i>
+          <p class="fw-semibold mb-0">Basketball</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+        <div class="lift-card p-4 rounded-4" style="background:var(--mist);">
+          <i class="fa-solid fa-stopwatch fs-1 text-royal mb-2"></i>
+          <p class="fw-semibold mb-0">Athletics</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="250">
+        <div class="lift-card p-4 rounded-4" style="background:var(--mist);">
+          <i class="fa-solid fa-bicycle fs-1 text-royal mb-2"></i>
+          <p class="fw-semibold mb-0">Cycling</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROFESSIONAL QUALITIES ===================== -->
+<section id="qualities" class="py-5" style="background:var(--mist); padding-top:6rem; padding-bottom:6rem;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="section-eyebrow">What Sets Him Apart</p>
+      <h2 class="display-5 font-display fw-bold" style="color:var(--deep);">Professional Qualities</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="lift-card h-100 p-4 rounded-4 bg-white shadow-sm">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <span class="rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:rgba(37,99,235,.1);"><i class="fa-solid fa-crown text-royal"></i></span>
+            <h3 class="fs-6 fw-bold font-display mb-0">Leadership</h3>
+          </div>
+          <p class="text-secondary small mb-0">Captaining teams at national tournaments, on and off the court.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="lift-card h-100 p-4 rounded-4 bg-white shadow-sm">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <span class="rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:rgba(37,99,235,.1);"><i class="fa-solid fa-list-check text-royal"></i></span>
+            <h3 class="fs-6 fw-bold font-display mb-0">Discipline</h3>
+          </div>
+          <p class="text-secondary small mb-0">Years of competitive training built consistency and structure.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="lift-card h-100 p-4 rounded-4 bg-white shadow-sm">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <span class="rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:rgba(37,99,235,.1);"><i class="fa-solid fa-child-reaching text-royal"></i></span>
+            <h3 class="fs-6 fw-bold font-display mb-0">Child Management</h3>
+          </div>
+          <p class="text-secondary small mb-0">Excellent rapport with children, keeping training safe and fun.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="lift-card h-100 p-4 rounded-4 bg-white shadow-sm">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <span class="rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:rgba(37,99,235,.1);"><i class="fa-solid fa-comments text-royal"></i></span>
+            <h3 class="fs-6 fw-bold font-display mb-0">Communication</h3>
+          </div>
+          <p class="text-secondary small mb-0">Fluent in English, Hindi and Punjabi for clear, inclusive coaching.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="lift-card h-100 p-4 rounded-4 bg-white shadow-sm">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <span class="rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:rgba(37,99,235,.1);"><i class="fa-solid fa-people-arrows text-royal"></i></span>
+            <h3 class="fs-6 fw-bold font-display mb-0">Teamwork</h3>
+          </div>
+          <p class="text-secondary small mb-0">A proven team-first mindset from years on national squads.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="lift-card h-100 p-4 rounded-4 bg-white shadow-sm">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <span class="rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:rgba(37,99,235,.1);"><i class="fa-solid fa-puzzle-piece text-royal"></i></span>
+            <h3 class="fs-6 fw-bold font-display mb-0">Problem Solving</h3>
+          </div>
+          <p class="text-secondary small mb-0">Adapts training plans on the fly to fit each student's needs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="py-5 grad-hero position-relative" style="padding-top:6rem; padding-bottom:6rem;">
+  <div class="court-lines"></div>
+  <div class="container position-relative" style="z-index:2;">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="section-eyebrow" style="color:var(--gold);">Let's Connect</p>
+      <h2 class="display-5 font-display fw-bold text-white">Contact Section</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="glass-dark rounded-4 p-4 p-md-5 text-white h-100">
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:48px;height:48px;background:rgba(245,158,11,.15);"><i class="fa-solid fa-phone text-gold"></i></span>
+            <div><p class="text-white-50 small mb-0">Phone</p><p class="mb-0 fw-semibold">9914396955</p></div>
+          </div>
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:48px;height:48px;background:rgba(245,158,11,.15);"><i class="fa-solid fa-envelope text-gold"></i></span>
+            <div><p class="text-white-50 small mb-0">Email</p><p class="mb-0 fw-semibold">kunalyadav0750@gmail.com</p></div>
+          </div>
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:48px;height:48px;background:rgba(245,158,11,.15);"><i class="fa-solid fa-location-dot text-gold"></i></span>
+            <div><p class="text-white-50 small mb-0">Location</p><p class="mb-0 fw-semibold">Chandigarh, India</p></div>
+          </div>
+          <hr class="border-white-50">
+          <p class="text-white-50 small mb-3">Find him on social media</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="rounded-circle d-flex align-items-center justify-content-center text-white" style="width:42px;height:42px;background:rgba(255,255,255,.1);" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="rounded-circle d-flex align-items-center justify-content-center text-white" style="width:42px;height:42px;background:rgba(255,255,255,.1);" aria-label="Instagram profile"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="rounded-circle d-flex align-items-center justify-content-center text-white" style="width:42px;height:42px;background:rgba(255,255,255,.1);" aria-label="Twitter profile"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="rounded-circle d-flex align-items-center justify-content-center text-white" style="width:42px;height:42px;background:rgba(255,255,255,.1);" aria-label="Facebook profile"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <form id="contactForm" class="glass rounded-4 p-4 p-md-5 needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-12">
+              <label for="cf-name" class="form-label fw-semibold" style="color:var(--deep);">Name</label>
+              <input type="text" class="form-control form-control-lg" id="cf-name" required minlength="2" placeholder="Your full name">
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-12">
+              <label for="cf-email" class="form-label fw-semibold" style="color:var(--deep);">Email</label>
+              <input type="email" class="form-control form-control-lg" id="cf-email" required placeholder="you@example.com">
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="col-12">
+              <label for="cf-message" class="form-label fw-semibold" style="color:var(--deep);">Message</label>
+              <textarea class="form-control form-control-lg" id="cf-message" rows="4" required minlength="10" placeholder="How can Kunal help you?"></textarea>
+              <div class="invalid-feedback">Please write a short message (min 10 characters).</div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-gold rounded-pill px-5 py-3 w-100 w-md-auto">
+                <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+              </button>
+              <p id="formSuccess" class="text-success fw-semibold mt-3 mb-0 d-none">
+                <i class="fa-solid fa-circle-check me-1"></i>Thanks! Your message has been noted (front-end preview only).
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="text-white pt-5 pb-4" style="background:#080D1A;">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h3 class="font-display fw-bold fs-4 mb-3">Kunal<span class="text-gold">Yadav</span></h3>
+        <p class="text-white-50 small">Physical Education Teacher &amp; Sports Coach dedicated to building strong,
+          disciplined and confident young athletes.</p>
+      </div>
+      <div class="col-md-4">
+        <h4 class="fs-6 fw-bold text-gold mb-3">Quick Links</h4>
+        <ul class="list-unstyled small d-grid gap-2">
+          <li><a href="#about" class="text-white-50 text-decoration-none">About</a></li>
+          <li><a href="#education" class="text-white-50 text-decoration-none">Education</a></li>
+          <li><a href="#skills" class="text-white-50 text-decoration-none">Skills</a></li>
+          <li><a href="#achievements" class="text-white-50 text-decoration-none">Achievements</a></li>
+          <li><a href="#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4 class="fs-6 fw-bold text-gold mb-3">Contact Info</h4>
+        <ul class="list-unstyled small text-white-50 d-grid gap-2">
+          <li><i class="fa-solid fa-phone me-2 text-gold"></i>9914396955</li>
+          <li><i class="fa-solid fa-envelope me-2 text-gold"></i>kunalyadav0750@gmail.com</li>
+          <li><i class="fa-solid fa-location-dot me-2 text-gold"></i>Chandigarh, India</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-white-50 mt-4">
+    <p class="text-center text-white-50 small mb-0">&copy; <span id="year"></span> Kunal Yadav. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // AOS init (respects prefers-reduced-motion automatically via CSS override above)
+  AOS.init({ duration: 700, once: true, offset: 80 });
+
+  // ----- Typing animation -----
+  const roles = ["Physical Education Teacher", "Sports Coach", "Handball Champion", "Student Mentor"];
+  const typedEl = document.getElementById('typedRole');
+  let rIdx = 0, cIdx = 0, deleting = false;
+
+  function typeLoop(){
+    const current = roles[rIdx];
+    if(!deleting){
+      cIdx++;
+      typedEl.textContent = current.slice(0, cIdx);
+      if(cIdx === current.length){ deleting = true; setTimeout(typeLoop, 1400); return; }
+    } else {
+      cIdx--;
+      typedEl.textContent = current.slice(0, cIdx);
+      if(cIdx === 0){ deleting = false; rIdx = (rIdx + 1) % roles.length; }
+    }
+    setTimeout(typeLoop, deleting ? 40 : 80);
+  }
+  typeLoop();
+
+  // ----- Counter animation -----
+  const counters = document.querySelectorAll('[data-count]');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const el = entry.target;
+        const target = parseInt(el.getAttribute('data-count'), 10);
+        let cur = 0;
+        const step = Math.max(1, Math.ceil(target / 60));
+        const tick = () => {
+          cur += step;
+          if(cur >= target){ el.textContent = target; return; }
+          el.textContent = cur;
+          requestAnimationFrame(tick);
+        };
+        tick();
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => counterObserver.observe(c));
+
+  // ----- Skill bar fill on scroll -----
+  const bars = document.querySelectorAll('.skill-bar-fill');
+  const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const el = entry.target;
+        el.style.width = el.getAttribute('data-width') + '%';
+        barObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+  bars.forEach(b => barObserver.observe(b));
+
+  // ----- Lane marker scroll progress (signature element) -----
+  const laneMarker = document.getElementById('lane-marker');
+  function updateLane(){
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? scrollTop / docHeight : 0;
+    const travel = document.documentElement.scrollHeight - 20;
+    if(laneMarker) laneMarker.style.top = (progress * travel) + 'px';
+
+    // back to top visibility
+    const btn = document.getElementById('backToTop');
+    if(scrollTop > 500){ btn.classList.add('show'); } else { btn.classList.remove('show'); }
+
+    // navbar active link highlight
+    highlightNav();
+  }
+  window.addEventListener('scroll', updateLane, { passive:true });
+  updateLane();
+
+  document.getElementById('backToTop').addEventListener('click', () => {
+    window.scrollTo({ top:0, behavior:'smooth' });
+  });
+
+  // ----- Nav active state -----
+  const sections = document.querySelectorAll('main section, header#hero');
+  const navLinks = document.querySelectorAll('.nav-link-underline');
+  function highlightNav(){
+    let currentId = 'hero';
+    sections.forEach(sec => {
+      const rect = sec.getBoundingClientRect();
+      if(rect.top <= 120 && rect.bottom >= 120){ currentId = sec.id; }
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+    });
+  }
+
+  // Collapse mobile nav on link click
+  document.querySelectorAll('#navMenu .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const collapseEl = document.getElementById('navMenu');
+      const collapse = bootstrap.Collapse.getInstance(collapseEl);
+      if(collapse) collapse.hide();
+    });
+  });
+
+  // ----- Contact form validation (front-end only) -----
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    if(!form.checkValidity()){
+      form.classList.add('was-validated');
+      return;
+    }
+    form.classList.add('was-validated');
+    document.getElementById('formSuccess').classList.remove('d-none');
+    form.reset();
+    form.classList.remove('was-validated');
+    setTimeout(() => document.getElementById('formSuccess').classList.add('d-none'), 5000);
+  });
+</script>
+</body>
+</html>
